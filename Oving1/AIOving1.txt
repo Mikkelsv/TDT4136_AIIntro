@@ -1,0 +1,114 @@
+Assignment 1 - Mikkel Svagård
+Due 09.09.2016
+
+
+Exercise 1 - Turing Test:
+The Turing Test is designed to test an artificial intelligence. The program
+passes if a human interrogator cannot tell wheter there was a computer or a
+person that was tested.
+The following capabilities is tested:
+    - Natural Language processing, as in communication successfully in English
+    - Knowledge Represenation, to store what it knows or hears
+    - Automated reasoning, as in interpet the information given and draw new
+      conclusions
+    - Machine Learning, to adapt to new circumstances and to detect and
+      extrapolate patterns (weird to try to define otherwise)
+The full Turing Test includes video signals as the program is tested in
+percecptual abilities as well. This causes the program to include computer
+vision to percieve objects and robotics to manipulate said objects (and move
+around)
+
+Exercise 2 - Thinking vs Acting Rationally:
+Thinking rationally can be defined as "correct" reasoning using a mathematical
+model. Acting rationally can be described as doing the right thing based
+maximal achievement, available information and computational abilities. As
+acting rationally relies on available information and deducing actions
+???
+
+Exercise 3 - Theory of Reference:
+Shows how to relate the objects in a logic to objects in the real world.
+To be noted, Tarskis Theory of Truth states that the truth or falsity of a
+statement is determined only by how it relates to the world and wheter it
+accurately describes given world. 
+
+Exercise 4 - Rationality:
+According to Wikipedia, Rationality is the quality or state of being
+resonable, based on the facts or reason. In other words, the state of seeking
+best outcome through deduction of available information. From the book its
+described as the actions given to achieve the ideale performance, based on
+prior knowledge, the opportunities of actions, and the agents percept sequence
+to date.
+
+Exercise 5 - Robot crossing road:
+A) As its based it's actions correctly based on the given information it can
+be argued to have acted rationally. On the other hand, the lack of sensors and
+informational sources the robot probably should have deduced that crossing the
+road might not have bene a good idea. Either way, as the helicopter could have
+landed whereever, and had nothing to do with the problem of crossing the road,
+I will conclude with that the robot acted rational.
+B) Other than the first two points made in the previous task the crossing car
+IS a natural obstacle. As the robot should be able to sense the car, it could
+be argued that it didn't act rational based on the infromation given.
+
+Exercise 6: Vacuum Cleaner
+A) As a simple reflex agent does not take in account of earlier actions (or past
+perceptions). Therefor, it will be heavily penalized due to unnecessary
+movements. As the environment only is two slots, after cleaning both if will
+move inbetween them. Hence, its not a rational agent.
+B)
+I understood it that reflex agent with state is known as a model-based reflex
+agent. According to an earlier edition of "A modern approach" these agents
+keeps track of the current state of the enviorment. In addition, they store
+information about how the world evolves on its own, as in how it would change
+differently if the agent acted differently. 
+Since this agent has tracked its own route, it knows where the clean squares
+are. And as the room only has 2 squares, it shouldnt do anything for a while
+after cleaning them both. Hence, with a "no action"-action it can be rational.
+C)
+As this simplex reflex agent only can make decisions based on 2 options, the
+two squares in question, it should be able the be rational if it got a
+"no-action"-action. Still, it has to continually check in the same manner as
+the one mentioned in B the squares if the have become dirty.
+An attempt of a pseudo-code:
+[A,Dirty ; B,Clean] : Suck
+[A,Dirty ; B,Dirty] : Suck
+[A,Clean ; B,Dirty] : Left
+[A,Clean ; B,Clean] : Wait 10 seconds
+And the same when current tile is B, just movement to the right.
+
+
+Exercise 7. 
+Definitions:
+Deterministic: Next state of enviornment determined by current state and
+executed actions. Otherwise Stochastic
+Episodic: Every action unaware/earlier or coming actions.Otherwise Sequantial
+Dynamic: Environment changes - otherwise static
+Discrete: Finite states - otherwise continuous.
+Known: Agent knows the environment - otherwise ubknown
+
+This enironment is:
+Deterministic
+Episodic, as it dont have a log taken into accoun
+Dynamic, as the dust gathers randomly
+Discrete
+Unknown, as the agent dont know fully the information of the environment
+
+Exercise 8:
+Simple reflex agents: Effective in environments with absolute rules, such as
+fire-alarms or door-openers, but stupid af in complex situations
+Model-based reflex agents: The memory creates opportunities for a more correct
+view of the environment, hence better decisionmaking. Still, its only making a
+guess of the world as it is now. As such, guessing wrong could be fatal.
+Goal-based makes decisions based on the set goals. This gives more freedom to
+the agent, and smoother opportunities to solve the problems towards the goal.
+Drawbacks with this is that it could be indecisive or making decisions leading
+to unforseen problems.
+Utility-based agents bases their action on whichever makes the highest degree
+of achievement (or "hapiness"). In cases of conflicting goals, this agent will
+be able to chose the wiser choice. Still, as its computing with expected
+achievement (or utility), this agents actions too could prove fatal. 
+
+
+
+
+
